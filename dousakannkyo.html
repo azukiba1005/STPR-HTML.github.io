@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>作品ページ</title>
+    <!-- 既存のindex.cssを読み込み -->
+    <link href="dousakannkyo.css" rel="stylesheet" type="text/css">
+    <!-- Tailwind CSS CDN (追加) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+   <link rel="icon" type="image/png" href="pictures/stpr logs.png">
+   <link rel="apple-touch-icon" href="pictures/stpr logs.jpg">
+    <style>
+      
+    </style>
+</head>
+<body class="p-4 sm:p-8 md:p-12 lg:p-16">
+    <header></header>
+
+    <!-- ハンバーガーメニューのトリガー -->
+    <div class="hamburger" onclick="toggleMenu()">
+        <div class="hamburger__line"></div>
+        <div class="hamburger__line"></div>
+        <div class="hamburger__line"></div>
+    </div>
+
+    <!-- メニュー本体 -->
+    <div class="menu slide-top" id="menu">
+        <a href="my.html" class="menu__item">
+            <span class="icon"><img src="pictures/STPR_menber.jpg" alt="すとぷりメンバー" /></span><span class="text">すとぷりとは</span>
+        </a>
+        <a href="riinu.html" class="menu__item">
+            <span class="icon"><img src="pictures/riinu01.webp" alt="莉犬" /></span><span class="text">莉犬</span>
+        </a>
+        <a href="ruto.html" class="menu__item">
+            <span class="icon"><img src="pictures/ruuto01.jfif" alt="るぅと" /></span><span class="text">るぅと</span>
+        </a>
+        <a href="coron.html" class="menu__item">
+            <span class="icon"><img src="pictures/coron01.webp" alt="ころん" /></span><span class="text">ころん</span>
+        </a>
+        <a href="satomi.html" class="menu__item">
+            <span class="icon"><img src="pictures/satomi.jfif" alt="さとみ" /></span><span class="text">さとみ</span>
+        </a>
+        <a href="jyel.html" class="menu__item">
+            <span class="icon"><img src="pictures/jyeru.jfif" alt="ジェル" /></span><span class="text">ジェル</span>
+        </a>
+        <a href="nanamori.html" class="menu__item">
+            <span class="icon"><img src="pictures/nanamori.jfif" alt="ななもり。" /></span><span class="text">ななもり。</span>
+        </a>
+        <a href="dousakannkyo.html" class="menu__item">
+            <span class="icon"><img src="pictures/STPR PC“46210-1379-3dc2487d93cf201f9d7b7f4d3c42e4ff-3900x3900”の背景が削除されました.png" alt="ななもり。" /></span><span class="text">検証済み/推奨動作環境</span>
+        </a>
+    </div>
+
+    <div class="content-section">
+        <h1 id="top" class="text-3xl sm:text-4xl font-extrabold text-center text-indigo-700 mb-8">
+            本サイトの推奨動作環境・検証済み動作環境について
+        </h1>
+
+
+
+        <section id="kaihatut" class="mb-8">
+            <h2 class="text-2xl font-bold text-indigo-700 mb-4">本サイトの開発環境について</h2>
+            <p class="text-indigo-800 leading-relaxed">
+                macOS 26 Tahoe Deveroper Beta 8 <br>
+                Visual Studio Code 1.103.2 <br>
+                Comet バージョン 139.0.7258.66（Official Build） （arm64）<br>
+
+            </p>
+        </section>
+
+        <section id="dousa" class="mb-8">
+            <h2 class="text-2xl font-bold text-indigo-700 mb-4">推奨動作環境</h2>
+            <p class="text-indigo-800 leading-relaxed">
+                macOS 15 Sequoia Safari最新版 <br>
+                macOS 15 Sequoia Chromium最新版 <br>
+                Windows 11 23H2 Chromium最新版<br>
+                iOS18 Safari最新版<br>
+
+            </p>   
+        </section>
+
+        <section id="kennsyou" class="mb-8">
+            <h2 class="text-2xl font-bold text-indigo-700 mb-4">検証済み動作環境</h2>
+            <p class="text-indigo-800 leading-relaxed">
+                macOS 26 Tahoe Deveroper Beta 8 Safari最新版 <br>
+                macOS 26 Tahoe Deveroper Beta 8 Comet最新版 <br>
+                macOS 26 Tahoe Deveroper Beta 8 Microsoft Edge最新版<br>
+                iOS26 Safari最新版<br> 
+                iOS26 Arc search 最新版<br>
+                Windows 11 日本語版 23H2 Microsoft Edge最新版<br>
+                Windows 11 日本語版 23H2 Arc search最新版<br>
+                Windows 11 日本語版 23H2 Vivaldi最新版<br>
+                Windows 11 英語版 22H2   Microsoft Edge最新版<br>
+
+
+            </p>        
+        </section>
+
+        <section id="source" class="mb-8">
+            <h2 class="text-2xl font-bold text-indigo-700 mb-4">本ウェブサイトのソースコードについて</h2>
+            <p class="text-indigo-800 leading-relaxed">
+                本ウェブサイトは全て、GitHubにソースコードを公開しております。ウェブサイトのバグ等あればGitHubのプロフィールのTwitterアカウントまでDMください <br>
+               <a href="https://github.com/azukiba1005/STPR-HTML.github.io" target="_blank" class="text-blue-600 underline">https://github.com/azukiba1005/STPR-HTML.github.io</a><br>
+            
+        </p>
+        </section>
+        
+        <section id="syaji" class="mb-8">
+            <h2 class="text-2xl font-bold text-indigo-700 mb-4">謝辞</h2>
+            <p class="text-indigo-800 leading-relaxed">
+               本サイトは、すとぷりのファンが個人的に制作した非公式のファンサイトです。<br>
+            すとぷりおよびメンバー各位とは一切関係ありません。<br>
+            公式情報については、すとぷりの公式サイトおよび各メンバーの公式SNSをご確認ください。<br>
+            当サイトの内容に関するお問い合わせには対応できませんのでご了承ください。<br>
+            また、当サイトの内容を無断で転載・配布することを禁止します。<br>
+            著作権は各権利者に帰属します.
+
+
+
+            </p>        
+        </section>
+    <!-- JavaScript for hamburger menu -->
+    <script>
+        function toggleMenu() {
+            const hamburger = document.querySelector('.hamburger');
+            const menu = document.getElementById('menu');
+            hamburger.classList.toggle('open');
+            menu.classList.toggle('open');
+        }
+    </script>
+</body>
+</html>
