@@ -1,0 +1,193 @@
+body {
+  cursor: url('pictures/jyel.png'), auto;
+  margin: 0; /* bodyのデフォルトマージンをリセット */
+  font-family: "Inter", sans-serif; /* フォントを指定 */
+}
+
+  /* Custom styles for Inter font and general body styling (index.cssと重複しないように調整) */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f2f5; /* Light gray background */
+            color: #333; /* Darker text color */
+            padding-top: 60px; /* ハンバーガーメニューと重ならないように調整 */
+        }
+        /* Table specific styles for better readability and appearance */
+        table {
+            border-collapse: separate;
+            border-spacing: 0;
+            width: 100%;
+        }
+        th, td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid #e2e8f0; /* Light border for rows */
+        }
+        th {
+            background-color: #6366f1; /* Indigo 500 for header */
+            color: white;
+            font-weight: 600;
+        }
+        tr:nth-child(even) {
+            background-color: #f8fafc; /* Lighter background for even rows */
+        }
+        tr:hover {
+            background-color: #e0e7ff; /* Lighter indigo on hover */
+        }
+        /* Rounded corners for the table */
+        table.rounded-corners {
+            border-radius: 0.75rem; /* Equivalent to rounded-xl */
+            overflow: hidden; /* Ensures content respects rounded corners */
+        }
+        /* Smooth scroll behavior */
+        html {
+            scroll-behavior: smooth;
+        }
+        /* コンテンツ部分のスタイル調整 */
+        .content-section {
+            max-width: 4xl;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: white;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* shadow-lg */
+            border-radius: 0.75rem; /* rounded-xl */
+            overflow: hidden;
+            padding: 1.5rem; /* p-6 */
+            margin-bottom: 2rem; /* 各セクション間の余白 */
+        }
+        .content-section h2, .content-section h3 {
+            color: #333; /* 見出しの色 */
+        }
+        .video-container {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .video-iframe {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+/* ハンバーガーメニューのスタイル */
+.hamburger {
+  position: fixed;
+  right: 20px;
+  top: 20px;
+  width: 30px;
+  height: 21px;
+  cursor: pointer;
+  z-index: 9999;
+  display: flex; /* flexboxを使って中央揃え */
+  flex-direction: column; /* 縦方向に並べる */
+  justify-content: space-between; /* 均等なスペース */
+}
+
+.hamburger__line {
+  width: 100%; /* 親要素の幅に合わせる */
+  height: 3px;
+  background-color: #333333;
+  border-radius: 2px;
+  transition: all 300ms ease;
+}
+
+/* ×変形（1本目） */
+.hamburger.open .hamburger__line:nth-child(1) {
+  transform: translateY(9px) rotate(45deg); /* 中央に移動してから回転 */
+}
+/* ×変形（2本目） */
+.hamburger.open .hamburger__line:nth-child(2) {
+  opacity: 0; /* 非表示 */
+}
+/* ×変形（3本目） */
+.hamburger.open .hamburger__line:nth-child(3) {
+  transform: translateY(-9px) rotate(-45deg); /* 中央に移動してから回転 */
+}
+
+/* メニュー本体 */
+.menu {
+  position: fixed; /* 固定位置 */
+  top: 0; /* 上端に配置 */
+  right: -320px; /* 初期状態では画面外に隠す (幅+少し余白) */
+  width: 300px;
+  height: 100vh; /* 画面いっぱいの高さ */
+  background-color: #ffffff;
+  color: #333333;
+  padding: 80px 20px 20px; /* 上部に余白を追加してハンバーガーボタンと重ならないようにする */
+  box-sizing: border-box; /* paddingを含めて幅を計算 */
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transition: right 300ms ease; /* rightプロパティをアニメーションさせる */
+  z-index: 9998; /* ハンバーガーボタンより低いz-index */
+  box-shadow: -2px 0 5px rgba(0,0,0,0.2); /* メニューの影 */
+  overflow-y: auto; /* メニュー項目が多い場合にスクロール可能にする */
+  border-radius: 10px; /* 角を丸くする */
+}
+
+.menu.open {
+  right: 0; /* 画面内に表示 */
+}
+
+.menu__item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  font-size: 16px;
+  color: inherit;
+  padding: 10px 0; /* 上下のパディングを追加 */
+  border-bottom: 1px solid #cccccc;
+  transition: background-color 0.3s ease; /* ホバー時のアニメーション */
+  border-radius: 5px; /* 角を丸くする */
+}
+
+.menu__item:last-child {
+  border-bottom: none;
+}
+
+.menu__item:hover {
+  background-color: #f0f0f0; /* ホバー時の背景色 */
+}
+
+.icon img {
+  width: 30px; /* アイコンのサイズを少し大きく */
+  height: 30px;
+  object-fit: cover; /* 画像がはみ出さないように調整 */
+  border-radius: 50%; /* 画像を丸くする */
+}
+
+/* コンテンツ部分のスタイル */
+center {
+  margin-bottom: 20px; /* 中央揃え要素の下に余白 */
+}
+
+h1, h2, h3 {
+  color: #333; /* 見出しの色 */
+}
+
+iframe {
+  max-width: 100%; /* レスポンシブ対応 */
+  height: auto; /* 高さを自動調整 */
+  border-radius: 10px; /* 角を丸くする */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* 影を追加 */
+}
+
+/* レスポンシブデザインの調整 */
+@media (max-width: 768px) {
+  .menu {
+    width: 250px; /* 小さい画面でのメニュー幅 */
+    right: -270px;
+  }
+}
+
+@media (max-width: 480px) {
+  .menu {
+    width: 100%; /* 非常に小さい画面では全幅 */
+    right: -100%;
+  }
+  .hamburger {
+    right: 10px;
+    top: 10px;
+  }
+}
