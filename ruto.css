@@ -1,5 +1,5 @@
 body {
-  cursor: url('pictures/STPR_menber.png'), auto;
+  cursor: url('pictures/ruto.png'), auto;
   margin: 0; /* bodyのデフォルトマージンをリセット */
   font-family: "Inter", sans-serif; /* フォントを指定 */
 }
@@ -191,3 +191,4 @@ iframe {
     top: 10px;
   }
 }
+

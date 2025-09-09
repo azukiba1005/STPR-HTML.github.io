@@ -193,18 +193,4 @@ iframe {
   }
 }
 
-/* 全体背景を淡い赤に */
-body {
-  background-color: #ffe6e6 !important;
-}
 
-/* 目次(nav)部分を淡い赤に */
-nav {
-  background-color: #ffe6e6 !important;
-}
-nav h2 {
-  color: #cc6666 !important; /* 見出しを濃い赤 */
-}
-nav ul li a {
-  color: #cc3333 !important; /* リンクを赤系 */
-}

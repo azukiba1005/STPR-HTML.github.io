@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>るぅとくんとは</title>
+    <!-- 既存のindex.cssを読み込み -->
+    <link href="ruto.css" rel="stylesheet" type="text/css">
+    <!-- Tailwind CSS CDN (追加) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+   <link rel="icon" type="image/png" href="pictures/ruto02.png">
+   <link rel="apple-touch-icon" href="pictures/ruto02.png">
+    <style>
+      
+    </style>
+</head>
+<body class="p-4 sm:p-8 md:p-12 lg:p-16">
+    <header></header>
+
+    <!-- ハンバーガーメニューのトリガー -->
+    <div class="hamburger" onclick="toggleMenu()">
+        <div class="hamburger__line"></div>
+        <div class="hamburger__line"></div>
+        <div class="hamburger__line"></div>
+    </div>
+
+    <!-- メニュー本体 -->
+    <div class="menu slide-top" id="menu">
+        <a href="my.html" class="menu__item">
+            <span class="icon"><img src="pictures/STPR_menber.jpg" alt="すとぷりメンバー" /></span><span class="text">すとぷりとは</span>
+        </a>
+        <a href="riinu.html" class="menu__item">
+            <span class="icon"><img src="pictures/riinu01.webp" alt="莉犬" /></span><span class="text">莉犬</span>
+        </a>
+        <a href="ruto.html" class="menu__item">
+            <span class="icon"><img src="pictures/ruuto01.jfif" alt="るぅと" /></span><span class="text">るぅと</span>
+        </a>
+        <a href="coron.html" class="menu__item">
+            <span class="icon"><img src="pictures/coron01.webp" alt="ころん" /></span><span class="text">ころん</span>
+        </a>
+        <a href="satomi.html" class="menu__item">
+            <span class="icon"><img src="pictures/satomi.jfif" alt="さとみ" /></span><span class="text">さとみ</span>
+        </a>
+        <a href="jyel.html" class="menu__item">
+            <span class="icon"><img src="pictures/jyeru.jfif" alt="ジェル" /></span><span class="text">ジェル</span>
+        </a>
+        <a href="nanamori.html" class="menu__item">
+            <span class="icon"><img src="pictures/nanamori.jfif" alt="ななもり。" /></span><span class="text">ななもり。</span>
+        </a>
+        
+        <a href="dousakannkyo.html" class="menu__item">
+            <span class="icon"><img src="pictures/STPR-PC.png" alt="検証済み/推奨作環境" /></span><span class="text">検証済み/推奨動作環境</span>
+        </a>
+    </div>
+
+    <div class="content-section">
+        <h1 id="top" class="text-3xl sm:text-4xl font-extrabold text-center text-indigo-700 mb-8">
+            るぅとくんとは
+        </h1>
+
+        <!-- Table of Contents -->
+        <nav class="mb-8 p-4 bg-indigo-50 rounded-lg shadow-md">
+            <h2 class="text-xl font-semibold text-indigo-600 mb-4">目次</h2>
+            <ul class="list-disc list-inside text-indigo-800 space-y-2">
+                <li><a href="#what-is-sutopuri" class="hover:underline text-blue-600">すとぷりとは？</a></li>
+                <li><a href="#videos" class="hover:underline text-blue-600">動画コンテンツ</a></li>
+                <li><a href="#detailed-history-table" class="hover:underline text-blue-600">詳細な歴史（年表）</a></li>
+                <li><a href="#stpr-taiappu" class="hover:underline text-blue-600">タイアップ</a></li>
+                <li><a href="#top" class="hover:underline text-blue-600">ページトップへ</a></li>
+            </ul>
+        </nav>
+
+        <!-- すとぷりとは？ Section -->
+        <section id="what-is-sutopuri" class="mb-12">
+            <h2 class="text-2xl sm:text-3xl font-bold text-indigo-600 mb-4 pb-2 border-b-2 border-indigo-200">
+                るぅとくんとは？🍓👑💛
+            </h2>
+            <p class="text-gray-800 leading-relaxed mb-4">
+                るぅとくんはすとぷりの黄色担当で、歌い手として活動している。グループ内では楽曲制作を担当しており、作詞・作曲・編曲を手掛けることが多い。彼の楽曲は感情豊かで、リスナーの心に深く響くものが多い。また、るぅとくんはその独特な歌声と表現力で、多くのファンを魅了している。
+            </p>
+        </section>
+
+        <!-- 動画コンテンツ Section -->
+        <section id="videos" class="mb-12">
+            <h2 class="text-2xl sm:text-3xl font-bold text-indigo-600 mb-4 pb-2 border-b-2 border-indigo-200">
+                動画コンテンツ
+            </h2>
+
+            <h3 class="text-xl font-semibold text-gray-700 mb-2">オリジナル曲</h3>
+            <div class="video-container">
+                <iframe width="1840" height="1035" src="https://www.youtube.com/embed/c7ujXLY17D4" title="夏聲 ／ るぅと Music Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+
+            <h3 class="text-xl font-semibold text-gray-700 mb-2">歌ってみた</h3>
+            <div class="video-container">
+                <iframe width="1840" height="1035" src="https://www.youtube.com/embed/BusFXOsgwDc" title="ゆるふわ樹海ガール ／ るぅと 【歌ってみた】" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </section>
+
+    
+
+        <!-- 詳細な歴史（年表） Section -->
+        <section id="detailed-history-table" class="mb-12">
+            <h2 class="text-2xl sm:text-3xl font-bold text-indigo-600 mb-4 pb-2 border-b-2 border-indigo-200">
+                大まかな歴史（年表）
+            </h2>
+            <div class="overflow-x-auto">
+                <table class="min-w-full bg-white rounded-corners">
+                    <thead class="bg-indigo-500 text-white">
+                        <tr>
+                            <th class="py-3 px-4 uppercase font-semibold text-sm rounded-tl-xl">年</th>
+                            <th class="py-3 px-4 uppercase font-semibold text-sm">出来事</th>
+                            <th class="py-3 px-4 uppercase font-semibold text-sm rounded-tr-xl">詳細</th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-gray-700">
+                        <tr>
+                            <td class="py-3 px-4">2015年</td>
+                            <td class="py-3 px-4">活動開始</td>
+                            <td class="py-3 px-4">当時高校2年生だったるぅとはセイデンキニンゲンが上手くできたと思い投稿</td>
+                        </tr>
+                         <tr>
+                            <td class="py-3 px-4">2016年</td>
+                            <td class="py-3 px-4">すとぷり加入</td>
+                            <td class="py-3 px-4">ななもり。に声の良さやミックスのこだわりなどを評価され、すとぷりに参加しないかと誘われる。</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-4">2016年</td>
+                            <td class="py-3 px-4">YouTubeチャネル開設</td>
+                            <td class="py-3 px-4">今までニコニコ動画でメインで活動していたるぅとがついにYouTubeに投稿しだす。</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-4">2017年</td>
+                            <td class="py-3 px-4">3年生の音楽専門学校に入学</td>
+                            <td class="py-3 px-4">高校3年生で作曲が難しいと挫折したが、活動する上で作曲したいと考え、3年制の専門学校への進学を決意</td>
+                        </tr>
+                          <tr>
+                            <td class="py-3 px-4">2017年</td>
+                            <td class="py-3 px-4">初のワンマンライブ</td>
+                            <td class="py-3 px-4">初めてのワンマンライブ「はじめてのはっぴょうかい！」が開催</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-4">2018年</td>
+                            <td class="py-3 px-4">初のミニアルバムが発売</td>
+                            <td class="py-3 px-4">初めてのミニアルバム君と僕のストーリーを発売</td>                
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-4">2018年</td>
+                            <td class="py-3 px-4">専門学校中退</td>
+                            <td class="py-3 px-4">活動が自分の中で「とても大きいものになった」と考えたるぅとは活動に専念することを決意。</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-4">2019年</td>
+                            <td class="py-3 px-4">オリコン週間アルバムランキングに載る</td>
+                            <td class="py-3 px-4">自身が全曲作詞作曲を手がけた1stフルアルバム「君と僕の秘密基地」がリリースされ、オリコンランキングで初週4位を獲得</td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="py-3 px-4">2021年</td>
+                            <td class="py-3 px-4">初の公式ファンクラブを発売</td>
+                            <td class="py-3 px-4">るぅとくんの誕生日に初の公式ファンブック「るぅとめもリー」を発売</td>
+                        </tr>
+
+                        <tr>
+                            <td class="py-3 px-4">2024年</td>
+                            <td class="py-3 px-4">100万人突破</td>
+                            <td class="py-3 px-4">自身のYouTubeチャンネルである「るぅとちゃんねる」が100万人突破</td>
+                        </tr>
+                        
+
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </div>
+
+       
+            <section id="stpr-taiappu" class="mb-12">
+            <h2 class="text-2xl sm:text-3xl font-bold text-indigo-600 mb-4 pb-2 border-b-2 border-indigo-200">
+                タイアップ
+            </h2>
+            <div class="overflow-x-auto">
+                <table class="min-w-full bg-white rounded-corners">
+                    <thead class="bg-indigo-500 text-white">
+                        <tr>
+                            <th class="py-3 px-4 uppercase font-semibold text-sm rounded-tl-xl">年</th>
+                            <th class="py-3 px-4 uppercase font-semibold text-sm">曲名
+                            </th>
+　　　　　　　　　　　　　　<th class="py-3 px-4 uppercase font-semibold text-sm">タイアップ先
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-gray-700">
+                        <tr>
+                            <td class="py-3 px-4">2024年</td>
+                            <td class="py-3 px-4">ファーストステップ</td>
+　　　　　　　　　　　　　　 <td class="py-3 px-4">テレビ東京系　おはスタ　2025年テーマソング
+</td></tr>
+                        
+
+
+                        
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </div>
+        </section>
+
+
+    <footer></footer>
+
+    <!-- JavaScript for hamburger menu -->
+    <script>
+        function toggleMenu() {
+            const hamburger = document.querySelector('.hamburger');
+            const menu = document.getElementById('menu');
+            hamburger.classList.toggle('open');
+            menu.classList.toggle('open');
+        }
+    </script>
+</body>
+</html>

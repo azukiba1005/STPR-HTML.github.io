@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ころんくんとは</title>
+    <!-- 既存のindex.cssを読み込み -->
+      <script src="https://cdn.tailwindcss.com"></script>
+      
+    <link href="coron.css" rel="stylesheet" type="text/css">
+    
+    <!-- Tailwind CSS CDN (追加) -->
+  
+   <link rel="icon" type="image/png" href="pictures/colon01.png">
+   <link rel="apple-touch-icon" href="pictures/colon01.png">
+    <style>
+
+    </style>
+</head>
+<body class="p-4 sm:p-8 md:p-12 lg:p-16">
+    <header></header>
+
+    <!-- ハンバーガーメニューのトリガー -->
+    <div class="hamburger" onclick="toggleMenu()">
+        <div class="hamburger__line"></div>
+        <div class="hamburger__line"></div>
+        <div class="hamburger__line"></div>
+    </div>
+
+    <!-- メニュー本体 -->
+    <div class="menu slide-top" id="menu">
+        <a href="my.html" class="menu__item">
+            <span class="icon"><img src="pictures/STPR_menber.jpg" alt="すとぷりメンバー" /></span><span class="text">すとぷりとは</span>
+        </a>
+        <a href="riinu.html" class="menu__item">
+            <span class="icon"><img src="pictures/riinu01.webp" alt="莉犬" /></span><span class="text">莉犬</span>
+        </a>
+        <a href="ruto.html" class="menu__item">
+            <span class="icon"><img src="pictures/ruuto01.jfif" alt="るぅと" /></span><span class="text">るぅと</span>
+        </a>
+        <a href="coron.html" class="menu__item">
+            <span class="icon"><img src="pictures/coron01.webp" alt="ころん" /></span><span class="text">ころん</span>
+        </a>
+        <a href="satomi.html" class="menu__item">
+            <span class="icon"><img src="pictures/satomi.jfif" alt="さとみ" /></span><span class="text">さとみ</span>
+        </a>
+        <a href="jyel.html" class="menu__item">
+            <span class="icon"><img src="pictures/jyeru.jfif" alt="ジェル" /></span><span class="text">ジェル</span>
+        </a>
+        <a href="nanamori.html" class="menu__item">
+            <span class="icon"><img src="pictures/nanamori.jfif" alt="ななもり。" /></span><span class="text">ななもり。</span>
+        </a>
+        </a>
+        <a href="dousakannkyo.html" class="menu__item">
+            <span class="icon"><img src="pictures/STPR-PC.png" alt="検証済み/水晶動作環境。" /></span><span class="text">検証済み/推奨動作環境</span>
+        </a>
+    </div>
+
+    <div class="content-section">
+        <h1 id="top" class="text-3xl sm:text-4xl font-extrabold text-center text-red-600 mb-8">
+            ころんくんとは
+        </h1>
+
+        <!-- Table of Contents -->
+        <nav class="mb-8 p-4 bg-indigo-50 rounded-lg shadow-md">
+            <h2 class="text-xl font-semibold text-indigo-600 mb-4">目次</h2>
+            <ul class="list-disc list-inside text-indigo-800 space-y-2">
+                <li><a href="#what-is-sutopuri" class="hover:underline text-blue-600">莉犬くんとは？</a></li>
+                <li><a href="#videos" class="hover:underline text-blue-600">動画コンテンツ</a></li>
+                <li><a href="#detailed-history-table" class="hover:underline text-blue-600">詳細な歴史（年表）</a></li>
+                <li><a href="#syutuen-history" class="hover:underline text-blue-600">アニメ・テレビ出演履歴</a></li>
+                <li><a href="#top" class="hover:underline text-blue-600">ページトップへ</a></li>
+            </ul>
+        </nav>
+
+        <!-- すとぷりとは？ Section -->
+        <section id="what-is-sutopuri" class="mb-12">
+            <h2 class="text-2xl sm:text-3xl font-bold text-indigo-600 mb-4 pb-2 border-b-2 border-indigo-200">
+                ころんくんとは？🍓👑🩵
+            </h2>
+            <p class="text-gray-800 leading-relaxed mb-4">
+                すとぷりの赤色担当。東京出身で1人の兄がいる。声優活動も活発に行なっており、その時の名義がこいぬ(現状は莉犬として活動中)。2017年にFTM(性同一性障害)であることを明かす。2022年にタイで性別適合手術を受け、晴れて戸籍が男性になったことを告白。YouTubeでは歌ってみたを初め。オリジナルアニメ動画シリーズである「ダチ部」も人気である。
+            </p>
+        </section>
+
+        <!-- 動画コンテンツ Section -->
+        <section id="videos" class="mb-12">
+            <h2 class="text-2xl sm:text-3xl font-bold text-indigo-600 mb-4 pb-2 border-b-2 border-indigo-200">
+                動画コンテンツ
+            </h2>
+
+            <h3 class="text-xl font-semibold text-gray-700 mb-2">ダチ部</h3>
+            <div class="video-container">
+              <iframe width="427" height="240" src="https://www.youtube.com/embed/19to7MbgWzU" title="【アニメ】超人気アイドルの裏の顔【ダレハナ】" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+
+            <h3 class="text-xl font-semibold text-gray-700 mb-2">オリジナル曲</h3>
+            <div class="video-container">
+            <iframe width="427" height="240" src="https://www.youtube.com/embed/JgHLMBsU9NQ" title="【MV】リバースデイ ／ 莉犬" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+
+            <h3 class="text-xl font-semibold text-gray-700 mb-2">歌ってみた</h3>
+            <div class="video-container">
+            <iframe width="427" height="240" src="https://www.youtube.com/embed/OE6Qd9eyAEI" title="モニタリング／莉犬【歌ってみた】" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </section>
+
+    
+
+    
+        <section id="detailed-history-table" class="mb-12">
+            <h2 class="text-2xl sm:text-3xl font-bold text-indigo-600 mb-4 pb-2 border-b-2 border-indigo-200">
+                大まかな歴史（年表）
+            </h2>
+            <div class="overflow-x-auto">
+                <table class="min-w-full bg-white rounded-corners">
+                    <thead class="bg-red-500 text-white">
+                        <tr>
+                            <th class="py-3 px-4 uppercase font-semibold text-sm rounded-tl-xl">年</th>
+                            <th class="py-3 px-4 uppercase font-semibold text-sm">出来事</th>
+                            <th class="py-3 px-4 uppercase font-semibold text-sm rounded-tr-xl">詳細</th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-gray-700">
+                        <tr>
+                            <td class="py-3 px-4">2014年</td>
+                            <td class="py-3 px-4">活動開始</td>
+                            <td class="py-3 px-4">高校三年生で受験が終わったことをきっかけに活動開始</td>
+                        </tr>
+                        
+                         <tr>
+                            <td class="py-3 px-4">2016年</td>
+                            <td class="py-3 px-4">初のオフイベ開催</td>
+                            <td class="py-3 px-4">初のソロイベント、「ころん生誕祭」を開催</td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="py-3 px-4">2016年</td>
+                            <td class="py-3 px-4">すとぷり加入</td>
+                            <td class="py-3 px-4">ななもり。の話もあり、すとぷりに加入することを了承。</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-4">2016年</td>
+                            <td class="py-3 px-4">YouTubeチャネル開設</td>
+                            <td class="py-3 px-4">すとぷりメンバーとして初めてYouTubeチャンネル「ころんの実況」を開始。</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-4">2019年</td>
+                            <td class="py-3 px-4">敗北ヒーロー公開</td>
+                            <td class="py-3 px-4">23歳の誕生日を祝して制作された「敗北ヒーロー」で初めて作詞を行って以降、自身の誕生日にあげるソロ曲の歌詞は自ら手がけるように。</td>
+                        </tr>
+                          <tr>
+                            <td class="py-3 px-4">2021年</td>
+                            <td class="py-3 px-4">初の実写MV公開</td>
+                            <td class="py-3 px-4">初めてころん本人が実写で出演する「アスター」が公開。</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-4">2021年</td>
+                            <td class="py-3 px-4">1stフルアルバムをリリース</td>
+                            <td class="py-3 px-4">初のフルアルバムアスターをリリース。初週で9.4万枚売り上げ、オリコン週間アルバムランキング2月2日付で初登場一位を行った。</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-4">2021年</td>
+                            <td class="py-3 px-4">初の3Dライブ</td>
+                            <td class="py-3 px-4">フルアルバムを記念して、初の3Dライブを開催。最大同時視聴者は6.9万人でライブ中にはTwitterにて「#ころん3D」のハッシュタグが世界トレンドランキング一位を獲得</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-4">2021年</td>
+                            <td class="py-3 px-4">登録者100万人達成</td>
+                            <td class="py-3 px-4">ころんのメインチャンネルが100万人を達成。これを記念してまた3Dライブが開催された。</td>
+                        </tr>
+                         <tr>
+                            <td class="py-3 px-4">2022年</td>
+                            <td class="py-3 px-4">初のファンブック発売</td>
+                            <td class="py-3 px-4">誕生日を記念して初めてのオフィシャルファンっブック「ころんメモリー」を発売。</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </div>
+
+       <section id="syutuen-history" class="mb-12">
+            <h2 class="text-2xl sm:text-3xl font-bold text-indigo-600 mb-4 pb-2 border-b-2 border-indigo-200">
+                アニメ・テレビ出演履歴
+            </h2>
+            <div class="overflow-x-auto">
+                <table class="min-w-full bg-white rounded-corners">
+                    <thead class="bg-indigo-500 text-white">
+                        <tr>
+                            <th class="py-3 px-4 uppercase font-semibold text-sm rounded-tl-xl">年</th>
+                            <th class="py-3 px-4 uppercase font-semibold text-sm">アニメ・テレビ・ゲーム・ラジオ
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-gray-700">
+                        <tr>
+                            <td class="py-3 px-4">2024年</td>
+                            <td class="py-3 px-4">すとぷりころんのSTPRhytm!!</td></tr>
+                         <tr>
+                        
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </div>
+        </section>
+
+
+
+    <footer></footer>
+
+    <!-- JavaScript for hamburger menu -->
+    <script>
+        function toggleMenu() {
+            const hamburger = document.querySelector('.hamburger');
+            const menu = document.getElementById('menu');
+            hamburger.classList.toggle('open');
+            menu.classList.toggle('open');
+        }
+    </script>
+</body>
+</html>
